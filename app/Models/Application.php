@@ -14,7 +14,9 @@ class Application extends Model
     protected $fillable = [
         'name',
         'email',
-        'status'
+        'status',
+        'message',
+        'comment'
     ];
 
     public const STATUS_NOT_CONFIRMED = 0;
