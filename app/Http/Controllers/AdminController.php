@@ -14,9 +14,9 @@ class AdminController extends Controller
         $this->adminService = $adminService;
     }
 
-    public function getAll(Request $request)
+    public function getAll()
     {
-        $result = $this->adminService->getAllApplications($request->all());
+        $result = $this->adminService->getAllApplications();
         return response()->json(['Applications' => $result]);
     }
     public function sortApplications(Request $request)
